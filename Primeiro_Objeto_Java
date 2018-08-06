@@ -67,6 +67,5 @@ public class Caneta
             tampada = false;
             System.out.println("A caneta foi destampada");
         }       
-
     }
 }
