@@ -2,21 +2,26 @@
 
 	body {}
 
+
+		/*Parágrafos*/
 		p
 		{
 			color: #D3D3D3;
 			text-align: justify; 
 			text-indent: 50px;
 			font-weight: 500;
+			font-family: "Georgia";
 		}
+
+		/*Títulos*/
 
 		h1
 		{
 
 			font-family: "Georgia";
-			font-size: 30px;
+			font-size: 10px;
 			color: #D3D3D3 ;
-			font-variant: small-caps;
+			font-variant: none;
 			font-weight: 600;
 			text-align: left;
 
@@ -29,6 +34,7 @@
 			color: #D3D3D3 ;
 			font-weight: 300;			
 			text-align: left;
+			font-variant: none;
 
 		}
 
@@ -55,20 +61,27 @@
 		h5
 		{
 			font-family: "Georgia";
-			font-size: 40px;
+			font-size: 30px;
 			color: #D3D3D3 ;
 			font-variant: small-caps;
 			font-weight: 25;
 		}
 
+		/*cabeçalho*/
+
+		ul#headers
+		{
+			position: absolute;
+			top: -20px;
+		}
+
 		nav#cabecalho
 		{
 			border-bottom: 2px #404040 solid;
-			height: 150px;
+			height: 200px;
 		}
 
 		nav#cabecalho ul
-
 		{
 			list-style: none;
 			position: relative;
@@ -76,25 +89,42 @@
 		}
 
 		nav#cabecalho li2
-
 		{	
 			position: relative;
 			left: 120px;
 		}
 
 		nav#cabecalho li3
-
 		{
 			position: relative;
 			left: 150px;
 
 		}
 
+
+		/*Área reservada para figuras e legendas*/
+
+		figure#login
+		{
+			position: absolute;
+			top: -150px;
+			left: 650px;
+			-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+   			filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+		}
+
+		figure#banner
+		{
+			position: absolute;
+			top: -270px;
+			left: -8px;
+		}
+
 		figure#circulo
 		{
 			position: absolute;
 			left: 1000px;
-			top: 135px;
+			top: 355px;
 			box-sizing: 100%;
 			-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
    			filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
@@ -105,87 +135,281 @@
 			list-style: none;
 			position: absolute;
 			left: 1000px;
-			top: 160px;
+			top: 380px;
 		}
 
-		figure.legenda
+		figure#tennis
+		{	
+			top: -10px;
+			left: -30px;
+			position: relative;
+			border-radius: 250%;
+  			shape-outside: border-box;
+  			transition: 2s;
+  			float: left;
+		}
 
+		figure#tennis:hover
+		{
+  			transform: rotate(-25deg);
+		}
+
+		figure#atari_console
+		{
+			position: relative;
+			left: 175px;
+		}
+
+		figcaption#controle
 		{
 			font-family: Times New Roman;
+			font-weight: 500;
+			color: #D3D3D3;
 			position: relative;
 			text-align: center;
+			left: -60px;
+			top: -30px;
+			transform: rotate(25deg);
 		}
 
-		figure.legenda figcaption
-
+		figcaption#atari
 		{
 			opacity: 0;
 			position: absolute;
-			top: 0px;
 			background-color: rgba(0,0,0,.4);
 			color: white;
-			width:70%;
-			padding: 40px;
+			width:85%;
+			padding: 60px;
 			box-sizing: border-box;
 			transition: 1s;
-			left: 90px;
-			text-align: center;
-
+			top: -10px;
+			left: -140px;
+			text-align: left;
+			color: #D3D3D3;
+			font-size: 15px;
 		}
 
-		figure.legenda:hover figcaption
+		figcaption#atari:hover
 
 		{
 			opacity: 1;
 		}
 
+		figure#format
+		{
+			position: absolute;
+			top: 2225px;
+			left: 0px;
+			-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+   			filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+		}
 
-		/*
-			*****<figure class="legenda">
-			no outro arquivo*****
+		figure#pg
+		{
+			position: absolute;
+			top: 2255px;
+			left: 30px;
+			-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+   			filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+			transform: rotate(-15deg);
+		}
 
-			figure.legenda
-			{
-				box-shadow: 14px 14px 4px black;
-			}
-			figure.legenda img
-			{
-				width: 100%;
-				height: 100%;
-			}
+		figure#logo
+		{
+			position: absolute;
+			top: 2525px;
+			left: 275px;
+		}
 
-			SÓ PRA TER
-		*/
+		figure#header
+		{
+			position: relative;
+			left: 80px;
+
+		}
+
+		figure#Turing
+		{
+			position: relative;
+			top: -15px;
+			left: 20px;
+			border-spacing: 100%;
+  			shape-outside: border-box;
+  			float: right;
+			-webkit-filter: drop-shadow(10px 10px 5px rgba(0,0,0,.4));
+   			filter: drop-shadow(10px 10px 5px rgba(0,0,0,.4));
+			
+		}
+
+		figcaption#turing_caption
+		{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: rgba(0,0,0,.6);
+			width: 84%;
+			height: 16.5%;
+			padding: 20px;
+			padding-top: 240px;
+			font-family: "Georgia";
+			color:#D3D3D3;
+			opacity: 1;
+			transition: 1s;
+			text-align: center;
+			vertical-align: text-bottom;
+		}
+
+		figcaption#turing_caption:hover
+		{
+			opacity: 0;
+		}
+
+		img#quadrada
+		{
+			position: absolute;
+			top: 1730px;
+			left: 800px;
+			-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+   			filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+		} 
+
+		img#graphs
+		{
+			position: absolute;
+			top: 1700px;
+			left: 860px;
+			transform: rotate(-15deg);
+			border-bottom: 100px;
+			transition:2s;
+			-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   			filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+		}
+
+		img#graphs:hover
+		{
+			transform: rotate(0deg);
+		}
+
+		figcaption#graphs
+		{
+			position: absolute;
+			left: 680px;
+			top: 1920px;
+			font-family: "Georgia";
+			color: #D3D3D3;
+			text-align: center;
+			padding: 170px;
+		}
+
+		figcaption#graphs a
+		{
+			font-family: "Georgia";
+			color: #D3D3D3;
+		}
+
+
+		/*Área destinada para o gifs*/
+
+		figure#pong_gif
+		{
+			position: absolute;
+			left: 720px;
+			top: 2400px;
+		}
+
+		figcaption#atari_pong
+		{
+			position: absolute;
+			top: 2440px;
+			left: 825px;
+			background-color: rgba(0,0,0,.8);
+			padding:60px;
+			font-family: "Georgia";
+			color:#D3D3D3;
+			opacity: 0;
+			transition: 1s;
+		}
+
+		figcaption#atari_pong:hover
+		{
+			opacity: 1;
+		}
+
+		figcaption#pong_gif
+		{
+			position: absolute;
+			top: 2670px;
+			left: 955px;
+			color: #D3D3D3
+		}
+
+		figcaption#pong_gif a
+		{
+			color: #D3D3D3;
+		}
+
+		/*Login é a área de login ou registro*/
+
+		nav#login
+		{
+			position: absolute;
+			left: 740px;
+			top: 90px;
+		}
+
+		nav#login li
+		{
+			text-transform: none;
+			color: #D3D3D3;
+			width: 20%;
+			padding: 20px;
+			margin: 0px;
+			display: inline;
+			transition: 1s;
+		}
+
+		nav#login a
+		{
+			color: #D3D3D3;
+			font-family: "Brush Script MT";
+			text-align: center;
+			text-decoration: none;
+			font-size: 60px;
+
+		}
+
+		nav#login a:hover
+		{
+			color: black;
+		}
 
 		/* Menu2 é o menu das empresas */
 
 		nav#menu2 ul
-
 		{
 			list-style: none;
 			text-transform: uppercase;
 			position: absolute;
-			top: 20px;
-			left: 725px;
+			top: 220px;
+			left: 700px;
 		}
 
 		nav#menu2 li 
-
 		{
-			opacity: 1;
 			background-color: rgba(0,0,0,.4);
-			color: white;
+			color: #D3D3D3;
 			width: 25%;
 			padding: 10px;
 			margin: 2px;
-			box-sizing: border-box;
 			display: inline;
 			opacity:1;
-			transition: background-color 1s;
+			transition: 1s;
+			font-family: "Georgia";
+			text-transform: none;
+
 		}
 
 		nav#menu2 li:hover
-
 		{
 			background-color: silver;
 		}
@@ -205,61 +429,252 @@
 
 		/* Menu é o menu dos anos */
 
-
 		nav#menu ul
-
 		{
 			text-transform: uppercase;
 			position: absolute;
-			top: 400px;
-			left: 800px;
+			top: 320px;
+			left: 740px;
 			list-style: none;
 		}
 
 		nav#menu li
-
 		{
-			opacity: 1;
 			background-color: rgba(0,0,0,.4);
-			color: white;
+			color: #D3D3D3;
 			width: 100%;
 			padding: 10px;
-			margin: 2px;
-			box-sizing: border-box;
-			display: block;
-			opacity:1;
-			font-size: 33px;
+			margin: 4px;
+			text-transform: none;
+			font-family: "Georgia";
+			text-align: center;
+			font-weight: 1000;
 		}
 
 		nav#menu li:hover
-
 		{
 			background-color: silver;
 			transition: 1s;
 		}
 
 		nav#menu a
-
 		{
-			color: white;
+			color: #D3D3D3;
 			text-decoration: none;
 			font-family: "Georgia";
 		}
 
 		nav#menu a:hover
-
 		{
 			color: black;
 			transition: 1s;
 		}
 
+		/*Interface*/
+
 		div#interface
 		{
-			width: 700px;
-			background-color: #606060;
-			margin: -25px 15px 0px 5px;
+			width: 650px;
+			background-color: #303030;
+			margin: -25px 0px 0px 30px;
 			box-shadow: 5px 5px 7px rgba(0,0,0,.4);
+			padding: 20px;
+		}
+
+		/*Tabela*/
+
+		table#vendas
+		{
+			position: absolute;
+			top: 590px;
+			left: 825px;
+			border: 1px solid #303030;
+			box-shadow: 5px 5px 7px rgba(0,0,0,.4);
+			border-spacing: 0px;
+			text-align: center;
+			font-family: "Georgia";
+			font-variant: normal;
+			color: #D3D3D3;
+			background-color: #151515;
+			text-transform: none;
+			margin-bottom: 50px;
+		}
+
+		table#vendas td
+		{
+			border: 1px solid #303030;
 			padding: 10px;
 		}
 
-		
+		table#vendas td.cs
+		{
+			background-color: #080808;
+		}
+
+
+		/*Parágrafo dentro da forma geométrica curva*/
+
+		div#paragraph
+		{
+			position: absolute;
+			width: 500px;
+			top: 2340px;
+			left: 140px;
+
+		}
+
+		/* Configurações de Javascript */
+
+		div#javascript_hora
+		{
+			opacity: 0;
+			font-family: "Georgia";
+			font-size: 12px;
+			color: #D3D3D3;
+			position: absolute;
+			top: 10px;
+			left: 800px;
+		}
+
+
+/***************************************************************************************************************************************************************************************************/
+/*Tudo depois do segundo body*/
+
+	h2#arrows
+		{
+			position: absolute;
+			padding: 10px;
+			width: 1000%;
+			left: -65px;
+			top: 710px;
+			font-size: 45px;
+			text-align: center;
+		}
+
+	div#text
+	{
+		position: absolute;
+		top: 2800px;
+		padding: 50px;
+		left: 500px;
+	}
+
+	div#parag_1
+	{
+		position: absolute;
+		top: 100px;
+		padding: 50px;
+		left: -10000px;
+		transition: .5s;
+		position: absolute;
+		border-left: 10px solid black;
+		border-top: 10px solid black;
+		padding: 25px;
+		background-color: rgba(05,05,05,.5);
+		border-radius: 100px;
+		margin:20px;
+		width: 400px;
+		-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   		filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+	}
+	div#parag_2
+	{
+		position: absolute;
+		top: 100px;
+		padding: 0px;
+		left: -10000px;
+		padding: 25px;
+		border-left: 10px solid black;
+		background-color: rgba(15,15,15,.6);
+		border-radius: 50px;
+		transition: .5s;
+		margin:20px;
+		width: 450px;
+		-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   		filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+	}
+	div#parag_3
+	{
+		position: absolute;
+		top: 420px;
+		padding: 50px;
+		left: -10000px;
+		border-right: 10px solid black;
+		border-bottom: 10px solid black;
+		padding: 40px;
+		background-color: rgba(25,25,25,.7);
+		border-radius: 125px;
+		margin:20px;
+		width: 500px;
+		transition: .5s;
+		-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   		filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+	}
+	div#parag_4
+	{
+		position: absolute;
+		top: 900px;
+		padding: 50px;
+		left: -10000px;
+		border-bottom: 10px solid black;
+		border-left: 10px solid black;
+		padding: 25px;
+		background-color: rgba(35,35,35,.7);
+		border-radius: 45px;
+		margin:20px;
+		width: 800px;
+		transition: .5s;
+		-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   		filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+	}
+
+	figure#snes
+	{
+		position: absolute;
+		top: 420px;
+		left: 250px;
+		-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   		filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+	}
+
+	button#arrow_right
+	{
+		position: absolute;
+		top: 125px;
+		left: 205px;
+		background-color: black;
+		padding: 40px;
+		width: 1%;
+		opacity: 0;
+	}
+
+	button#arrow_left
+	{
+		position: absolute;
+		top: 125px;
+		left: 10px;
+		background-color: black;
+		padding: 40px;
+		width: 1%;
+		opacity: 0;
+	}
+
+	h2#crash
+	{
+		position: absolute;
+		top: 2550px;
+		font-size: 180px;
+		left: 15px;
+		-webkit-filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+   		filter: drop-shadow(15px 15px 5px rgba(0,0,0,.4));
+
+	}
+
+	div#final
+	{
+		position: absolute;
+		top: 4070px;
+		padding: 55px;
+		left: 0px;
+		background-color: #101010;
+	}
