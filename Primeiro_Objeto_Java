@@ -1,4 +1,4 @@
-package aulaobjeto;
+package aulaobjeto; 
 public class AulaObjeto 
 {
     public static void main(String[] args)
