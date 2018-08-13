@@ -68,14 +68,14 @@
 	{
 
 	document.getElementById("idon").innerHTML = "<br><br>" + zero_cont +
-										   "<br><br>" + um_cont +
-										   "<br><br>" + dois_cont +
-										   "<br><br>" + tres_cont +
-										   "<br><br>" + quatro_cont +
-										   "<br><br>" + cinco_cont +
-										   "<br><br>" + seis_cont +
-										   "<br><br>" + sete_cont +
-										   "<br><br>" + oito_cont +
-										   "<br><br>" + nove_cont;
+						    "<br><br>" + um_cont +
+						    "<br><br>" + dois_cont +
+						    "<br><br>" + tres_cont +
+						    "<br><br>" + quatro_cont +
+						    "<br><br>" + cinco_cont +
+						    "<br><br>" + seis_cont +
+						    "<br><br>" + sete_cont +
+						    "<br><br>" + oito_cont +
+						    "<br><br>" + nove_cont;
 
 	}
