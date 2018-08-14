@@ -1,6 +1,6 @@
 import java.util.Scanner;
 package arraytest;
-public class ArrayTest 
+public class ArrayTest  
 {
     public static void main(String[] args) 
     {
