@@ -15,6 +15,8 @@ create table people( //this is how you create a table
 
 ) default charset = utf8;  '//add the charset to the table'
 
+select * from (table names) '//this command will show you the table'
+
 show databases '//this command will show all the databases'
 
 show tables '//this command will show all the tables of a selected database'
