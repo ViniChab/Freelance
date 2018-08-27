@@ -1,6 +1,6 @@
 package objeto;
 class Caneta 
-{ //Classe é o molde de um objeto, sua representação em forma de codígo;
+{ //Classe é o molde de um objeto, sua representação em forma de codígo; 
     
     //As primeiras coisas a serem adicionadas, são as características/atributos
     //da classe/objeto:
