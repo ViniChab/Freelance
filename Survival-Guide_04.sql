@@ -1,4 +1,4 @@
-
+ 
     alter table people
     add foreign key (favoriteGame)
     references favoritegame(id); '//this is how you add a foreign key'
