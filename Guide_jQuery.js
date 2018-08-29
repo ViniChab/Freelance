@@ -43,3 +43,9 @@ import * as $ from 'jQuery'; //this is how you import jQuery inside a component 
       }) 
 
     }); //This is an example of how I implemented a button counter in a page
+
+    .html()//This is just like text, but will accept tags
+
+    .addClass('classname')//This will add a class to the specified $(), wich you can add lots of css styling with normal css
+
+    $("a").attr("href", "https://en.wikipedia.org/wiki/Crocodile"); //This is how you change an atribute
