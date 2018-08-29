@@ -49,3 +49,11 @@ import * as $ from 'jQuery'; //this is how you import jQuery inside a component 
     .addClass('classname')//This will add a class to the specified $(), wich you can add lots of css styling with normal css
 
     $("a").attr("href", "https://en.wikipedia.org/wiki/Crocodile"); //This is how you change an atribute
+
+
+        var newP = $("<p>");
+        newP.text("some text"); //In this example, jQuery created a new paraph for the page,
+        newP.addClass("class"); //and since it is appended to body, it will be the vary last 
+        $("body").append(newP); //thing to show before the 'body' tag closes
+
+ 
