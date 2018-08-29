@@ -1,6 +1,6 @@
 create database cadastro //use this to create a database
 default character set utf8 //use this to add the utf8 charset
-default collate utf8_general_ci;
+default collate utf8_general_ci; 
 
 create table people( //this is how you create a table
 
