@@ -56,4 +56,10 @@ import * as $ from 'jQuery'; //this is how you import jQuery inside a component 
         newP.addClass("class"); //and since it is appended to body, it will be the vary last 
         $("body").append(newP); //thing to show before the 'body' tag closes
 
+
+      $(document).ready(function(){
+      $('#pages li').each(function(i) {
+      $(this).attr('id', (i+1));
+      $('#' + (i+1)).text((i+1)) //This is how you put a variable as a parameter
+      
  
