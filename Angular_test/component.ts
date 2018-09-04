@@ -1,9 +1,17 @@
-.
-.
-.
+import { Component, OnInit, Input } from '@angular/core';
 
-export class AppComponent {
+@Component({
+  selector: 'app-photo',
+  templateUrl: './photo.component.html',
+  styleUrls: ['./photo.component.css']
+})
+export class PhotoComponent implements OnInit {
 
-  url="https://haste.net/wp-content/uploads/2017/12/Haste-Battlefield-1-Cover-241x300.jpg";
+  @Input() url="";
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
