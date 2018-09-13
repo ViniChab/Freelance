@@ -6,7 +6,7 @@
 	{
 		width: 100%;
 		height: 635px;
-		margin: 0;
+		margin: 0; 
 		border: 0;
 		padding: 0;
 	}
