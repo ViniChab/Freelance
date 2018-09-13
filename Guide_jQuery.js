@@ -1,6 +1,6 @@
 
 import * as $ from 'jQuery'; //this is how you import jQuery inside a component of Angular 
-
+ 
 "../node_modules/jquery/dist/jquery.min.js" //also never forguet to add this inside the angular json file, in scripts
 
 //after that, you are setup to use jQuery inside the specified component
