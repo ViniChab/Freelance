@@ -1,4 +1,3 @@
-package basicPack;
 
 public class test {
 
