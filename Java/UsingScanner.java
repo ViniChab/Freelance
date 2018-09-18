@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 public class test {
 	
 	public static void main(String[] args) 
@@ -6,7 +8,9 @@ public class test {
 	
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
-		System.out.println(a);
+		scan.nextLine(); //this is how you clean an input
+		String name = scan.nextLine();
+		System.out.println(a + name);
 		scan.close();
 		
 	}
