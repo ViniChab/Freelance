@@ -1,0 +1,18 @@
+<div id="boi" [ngClass]="{'active-menu' : isShown }">
+
+    <div id="all" class="menu-bar">
+        <div tabindex="0" (keyup.space)="toggle()" class="overlay" (click)="toggle()"> 
+            <div id="reg">
+                <a href="/home">Login</a>
+                <a href="home/register">Register</a>
+            </div>
+        </div>
+
+        <i class="fa fa-times" (click)="toggle()"></i>
+        <ng-content> 
+
+        </ng-content>
+        
+    </div>
+
+</div> 
