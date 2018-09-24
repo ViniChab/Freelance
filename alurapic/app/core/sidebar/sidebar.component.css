@@ -1,0 +1,35 @@
+div#all
+{
+    border: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    border-top:solid 2px  rgba(0,0,0,.3);
+    padding: 1px;
+    transition: .5s;
+    text-align: right;
+}
+
+div#items
+{
+    padding-right: 155px;
+}
+
+i
+{
+    padding-right: 15px;
+    transition: .1s;
+}
+
+i:hover
+{
+    color: #0066ff;
+    font-size: 25px;
+}
+
+a
+{
+    font-style: none;
+    text-decoration: none;
+    color: #202020;
+}
