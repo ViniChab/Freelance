@@ -20,7 +20,7 @@ public class Test {
 		double areaDeX = x.area(x.LadoA, x.LadoB, x.LadoC); //chamando o método
 		
 		System.out.printf("\nThe area of the first triangle is: %.2f", areaDeX);
-		//mensagem mostrando a area de 2
+		//mensagem mostrando a area de x
 		
 		System.out.println("\nPlease, enter the values for the second tringle:\n");
 
@@ -31,7 +31,7 @@ public class Test {
 		double areaDeY = y.area(y.LadoA, y.LadoB, y.LadoC); //chamando o método
 
 		System.out.printf("\nThe area of the first triangle is: %.2f", areaDeY);
-		//mensagem mostrando a area de 2
+		//mensagem mostrando a area de y
 		
 		System.out.print("\nThe triangle with the greatest area, is the number ");
 		
