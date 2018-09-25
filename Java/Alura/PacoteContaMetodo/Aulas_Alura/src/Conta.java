@@ -4,23 +4,31 @@ class Conta{
 	int numero;
 	String titular;
 	
-	void depositar(double valor){
+	public void depositar(double valor){
 		
 		this.saldo += valor;
 		
 	} 
 	
-	boolean sacar(double valor) {
+	public boolean sacar(double valor) {
 		
 		if( this.saldo >= valor ) {
 
 			this.saldo -= valor;
 			return true;
 
-		} else { return false; }
-		
+		} else 
+			return false; 
 	}
 	
-	/*primeiro indica o tipo do retorno, no caso 
-	 nenhum (void) e dps funciona como uma função*/
+	public boolean transferir(double valor, Conta destino) {
+		
+		boolean saqueComSucesso = this.sacar(valor);
+		
+		if ( saqueComSucesso == true ) {
+			destino.depositar(valor);
+			return true;
+		}else 
+			return false;
+	}
 }
