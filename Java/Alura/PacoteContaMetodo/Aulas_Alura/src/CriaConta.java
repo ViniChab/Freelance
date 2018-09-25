@@ -2,18 +2,23 @@
 public class CriaConta {
 
 	public static void main(String[] args) {
-		
+
 		Conta minhaConta = new Conta(); 
+		Conta outraConta = new Conta(); 
 		
-		minhaConta.depositar(100); //usando meu método
+		minhaConta.depositar(400); //usando meu mÃ©todo
 		
-		System.out.println(minhaConta.saldo);
+		System.out.println("Saldo da minha conta: " + minhaConta.saldo);
+		System.out.println("Saldo da conta destino: " + outraConta.saldo);
 		
-		if (minhaConta.sacar(500) == true )
-		System.out.println(minhaConta.saldo); //usando meu método
-		
-		else
-		System.out.println("Saldo insuficiente");
+		if ( minhaConta.transferir(512, outraConta) == true ) 
+		{
+			System.out.println("Novo saldo da minha conta: " + minhaConta.saldo);
+			
+			System.out.println("TransferÃªncia realizada com sucesso\n"
+			+ "Saldo da conta destino: " + outraConta.saldo );
+			
+		} else System.out.println("Saldo insuficiente para a transferÃªncia");
 		
 	}
 
