@@ -15,7 +15,7 @@ public static void main(String[] args) {
 		}catch(Exception err){
 			System.out.println("Por favor, tente novamente");
 			workingInput = false;
-			scan.next();
+			scan.next(); //this is used to stop the loop, brother
 		}
 	} 
 		
