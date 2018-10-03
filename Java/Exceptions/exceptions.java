@@ -47,3 +47,24 @@ public static void main(String[] args) {
 	}
 
 //IllegalStateException - Quando o Scanner já foi fechado
+//POR EXEMPLO:
+
+public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		scan.close();
+		
+		int a;
+		a = scan.nextInt();
+	
+		/*Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+		at java.util.Scanner.ensureOpen(Scanner.java:1070)
+		at java.util.Scanner.next(Scanner.java:1465)
+		at java.util.Scanner.nextInt(Scanner.java:2117)
+		at java.util.Scanner.nextInt(Scanner.java:2076)
+		at CriaConta.main(CriaConta.java:19)*/
+		
+	}
+}
+
