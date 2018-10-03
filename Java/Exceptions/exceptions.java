@@ -12,3 +12,16 @@ public static void main(String[] args) {
 				at Exceptions.main(Exceptions.java:7)*/
 	}
   
+//NullPointerException - Quando você chama um ponteiro que não aponta pra nada
+//POR EXEMPLO:
+
+public static void main(String[] args) {
+
+	exemplo exe = null; //exemplo é uma classe
+	exe.ex(); //chamando um método qualquer
+	
+	/* ERROR: java.lang.NullPointerException
+	at CriaConta.main(CriaConta.java:27)*/
+		
+		
+	}
