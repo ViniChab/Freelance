@@ -24,3 +24,16 @@ public static void main(String[] args) {
 		at CriaConta.main(CriaConta.java:27)*/	
 		
 	}
+
+//InputMismatchException - Quando o problema é matemática
+//POR EXEMPLO:
+
+public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		int b;
+		b = scan.nextInt();
+		
+		scan.close();
+	}
