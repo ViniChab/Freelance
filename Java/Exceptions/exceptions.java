@@ -25,7 +25,7 @@ public static void main(String[] args) {
 		
 	}
 
-//InputMismatchException - Quando o problema é matemática
+//InputMismatchException - Quando o input é do tipo errado
 //POR EXEMPLO:
 
 public static void main(String[] args) {
@@ -45,3 +45,5 @@ public static void main(String[] args) {
 		at CriaConta.main(CriaConta.java:35)*/
 	
 	}
+
+//IllegalStateException - Quando o Scanner já foi fechado
