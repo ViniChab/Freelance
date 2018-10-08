@@ -4,20 +4,24 @@ import java.util.Scanner;
 
 import br.com.bytebank.Funcionarios.Gerente;
 public class mainSystem {
+	
+	public static void header() {
+		System.out.println("------------------------------WELCOME------------------------------");
+		System.out.println("Source by ViniChab\n\n");
+	}
 
 	public static void main(String[] args) {
-
-		Gerente gerente = new Gerente();
-
-		gerente.setName("Binichirusu");
-		gerente.setSalario(3245.00);
-		gerente.setCPF("111.222.333-44");
-		gerente.setSenha("batata151");
-
+		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Digite sua senha: ");
-		gerente.autenticar(scan.nextLine());
-		scan.close();
+		
+		header();
 
+		System.out.println("Bem-Vindo ao bytebank! \nSelecione o que deseja fazer:");
+		System.out.println("[1] Criar uma conta");
+		System.out.println("[2] Procurar uma conta");
+		System.out.println("[3] Deletar uma conta");
+		
+		scan.close();
+		
 	}
 }
