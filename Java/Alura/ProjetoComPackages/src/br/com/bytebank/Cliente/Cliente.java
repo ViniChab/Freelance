@@ -1,15 +1,42 @@
 package br.com.bytebank.Cliente;
 
-import br.com.bytebank.Services.Autenticado;
+public class Cliente {
 
-public class Cliente implements Autenticado{
-
-	@Override
-	public void setSenha(String Novasenha) {}
-
-	@Override
-	public boolean autenticar(String senha) {
-		return false;
+	private String nome;
+	private Double rendaMensal;
+	private String emprego;
+	private String endereço;
+	
+	public Cliente(String nome, Double rendaMensal, String emprego, String endereço) 
+	{
+		this.nome = nome;
+		this.rendaMensal = rendaMensal;
+		this.emprego = emprego;
+		this.endereço = endereço;
 	}
-
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Double getRendaMensal() {
+		return rendaMensal;
+	}
+	public void setRendaMensal(Double rendaMensal) {
+		this.rendaMensal = rendaMensal;
+	}
+	public String getEmprego() {
+		return emprego;
+	}
+	public void setEmprego(String emprego) {
+		this.emprego = emprego;
+	}
+	public String getEndereço() {
+		return endereço;
+	}
+	public void setEndereço(String endereço) {
+		this.endereço = endereço;
+	}
 }
