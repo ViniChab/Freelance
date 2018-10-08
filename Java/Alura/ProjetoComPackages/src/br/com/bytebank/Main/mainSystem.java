@@ -2,7 +2,9 @@ package br.com.bytebank.Main;
 
 import java.util.Scanner;
 
-import br.com.bytebank.Funcionarios.Gerente;
+import br.com.bytebank.Cliente.Cliente;
+import br.com.bytebank.Conta.Conta;
+
 public class mainSystem {
 	
 	public static void header() {
@@ -20,6 +22,7 @@ public class mainSystem {
 		System.out.println("[1] Criar uma conta");
 		System.out.println("[2] Procurar uma conta");
 		System.out.println("[3] Deletar uma conta");
+		System.out.println("[4] Tirar um extrato");
 		
 		scan.close();
 		
