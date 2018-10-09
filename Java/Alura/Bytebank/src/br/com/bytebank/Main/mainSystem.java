@@ -1,4 +1,4 @@
-package br.com.bytebank.Main;
+package br.com.bytebank.Main; 
 
 import java.util.Scanner;
 
@@ -62,9 +62,9 @@ public class mainSystem {
 		
 		b.setEmprego(scan.nextLine());
 		
-		System.out.print("\nPor fim, seu endereço: ");
+		System.out.print("\nPor fim, seu endereÃ§o: ");
 		
-		b.setEndereço(scan.nextLine());
+		b.setEndereÃ§o(scan.nextLine());
 		scan.next();
 		
 		ContaVinicius a = new ContaVinicius(0, null, b, 0);
