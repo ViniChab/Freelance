@@ -13,6 +13,37 @@ public class mainSystem {
 		System.out.println("Source by ViniChab\n\n");
 	}
 	
+	public static int seguranca( int x ) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		boolean workingInput = false;
+		
+		while( workingInput == false )
+		{
+			try 
+			{
+				x = scan.nextInt();
+				workingInput = true;
+				if (x > 4 || x < 0)
+				{
+					System.out.println("Por favor, tente novamente");
+					workingInput = false;
+				}	
+			}
+			catch(Exception err)
+			{
+				System.out.println("Por favor, tente novamente");
+				workingInput = false;
+				scan.next();
+			}
+		} 
+		
+		scan.close();
+		
+		return x;
+	}
+	
 	public static void criaConta() {
 
 		Scanner scan = new Scanner(System.in);
@@ -40,7 +71,7 @@ public class mainSystem {
 		
 		System.out.print("\nCadastro de cliente completo! Digite  numero de sua agencia: ");
 		
-		a.setAgencia(scan.nextInt());
+		seguranca(a.getAgencia());
 
 		System.out.print("\nSua conta: ");
 		
@@ -53,7 +84,6 @@ public class mainSystem {
 		
 		Scanner scan = new Scanner(System.in);
 		int escolha = 0;
-		boolean workingInput = false;
 		header();
 
 		System.out.println("Bem-Vindo ao bytebank! \nSelecione o que deseja fazer:");
@@ -62,25 +92,7 @@ public class mainSystem {
 		System.out.println("[3] Deletar uma conta");
 		System.out.println("[4] Tirar um extrato");
 		
-		while( workingInput == false )
-		{
-			try 
-			{
-				escolha = scan.nextInt();
-				workingInput = true;
-				if (escolha > 4 || escolha < 0)
-				{
-					System.out.println("Por favor, digite uma das opções");
-					workingInput = false;
-				}	
-			}
-			catch(Exception err)
-			{
-				System.out.println("Por favor, tente novamente");
-				workingInput = false;
-				scan.next();
-			}
-		} 
+		seguranca(escolha);
 		
 		switch (escolha) {
 		
