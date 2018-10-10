@@ -10,7 +10,8 @@ public class imutabilidade {
 		System.out.println(nome);
 		int a = nome.indexOf("I");
 		System.out.println(a);
-
+		nome = nome.substring(2);
+		System.out.println(nome);
 	}
 
 }
