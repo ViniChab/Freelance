@@ -1,0 +1,5 @@
+<prompt $~> login <your steam account login name>
+<prompt $~> force_install_dir <where you want to download the game files>
+<prompt $~> @sSteamCmdForcePlatformType windows
+<prompt $~> app_update <game's appid> validate
+Download should start
