@@ -15,8 +15,9 @@ public class RotaPedidos {
 			public void configure() throws Exception {
 				
 				from("file:pedidos?delay=5s").
+				log("{$id}").
 				to("file:saída");
-				
+				//Se eu colocar noop=true, ele não vai apagar os arquivos da parta original
 			}
 		});
 		context.start();
