@@ -8,7 +8,7 @@
 	<name>projeto-camel-alura</name>
 	<url>http://maven.apache.org</url>
   
-	<properties>
+	<properties> 
 		<camel-version>2.16.0</camel-version>
    </properties>
   
