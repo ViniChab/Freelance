@@ -1,3 +1,4 @@
 <console$> npm install @angular/cdk /*adicionando o compoent development kit*/
 <console$> npm install @angular/material /*puxando as dependências do material*/
 <console$> npm install @angular/animation /*Para puxar as animações*/
+<console$> hammerjs /*para baixar hammerjs*/
