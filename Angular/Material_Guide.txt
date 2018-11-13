@@ -1,1 +1,1 @@
-<console$> npm install @angular/cdk
+<console$> npm install @angular/cdk /*adicionando o compoent development kit*/
