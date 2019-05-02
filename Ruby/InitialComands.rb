@@ -14,3 +14,4 @@ puts "Hello World" #Prints AND breaks line
   puts Math.tan(0)
 #For Maths
 name = gets.chomṕ.to_s #gets your name wit a toString
+"#{rand(a .. b)}" #This will create a random number between a and b
