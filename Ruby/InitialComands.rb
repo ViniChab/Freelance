@@ -15,3 +15,5 @@ puts "Hello World" #Prints AND breaks line
 #For Maths
 name = gets.chomṕ.to_s #gets your name wit a toString
 "#{rand(a .. b)}" #This will create a random number between a and b
+until #Just like a loop, but it will break once the condtion is false
+begin end while #Just like a do while()
