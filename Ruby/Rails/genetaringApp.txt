@@ -1,3 +1,5 @@
 rails new SimpleBlog //Creates a new project
 
 bundle install //(Inside new project) Installs dependencies, just like the npm install
+
+rails server //Starts app
