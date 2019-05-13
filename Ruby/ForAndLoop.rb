@@ -8,8 +8,6 @@ end
 counter = 0;
 loop do 
     counter += 1
-    if counter > 1000
-        break
-    end
+    break if counter > 1000
     puts counter
 end
