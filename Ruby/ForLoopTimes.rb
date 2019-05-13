@@ -11,3 +11,11 @@ loop do
     break if counter > 1000
     puts counter
 end
+
+###########################################################
+
+puts "Enter a value"
+value = gets.chomp.to_i
+value.times do 
+    puts "You entered a value"
+end
