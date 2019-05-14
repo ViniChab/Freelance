@@ -31,3 +31,35 @@ end
 puts "Os alunos são: \n #{aluno.getNomes()}"
 
 #implement example
+
+##########################################################################################################
+
+class BankAccount
+    @@NumberAccounts = 0
+    def open(nome, senha) 
+        @@NumberAccounts += 1
+        @IdAccount = @@NumberAccounts
+        @Senha = senha
+        @Nome = nome
+    end
+    def getInfo()
+        values = {
+            'ID' => @IdAccount, 
+            'Nome' => @Nome, 
+            'Senha'=> @Senha
+        }
+        return values
+    end
+end
+
+##Functions  and methods##
+
+puts "Digite seu nome: " 
+nome = gets.chomp.to_s
+puts "Defina  uma senha: "
+senha = gets.chomp.to_s
+
+conta = BankAccount.new()
+conta.open(nome, senha)
+
+puts "Suas informações são: #{conta.getInfo()}"
