@@ -1,0 +1,46 @@
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Descrição</td>
+                <td>Preço</td>
+                <td>Quantidade</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%@produto.each do |jogo|%>
+                <tr>
+                    <td> <%=jogo.nome%> </td>
+                    <td> <%=jogo.descricao%> </td>
+                    <td> <%=jogo.quantidade%> </td>
+                    <td> <%=jogo.preco%> </td>
+                </tr>
+            <%end%>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <td>Produtos com Desconto</td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>Descrição</td>
+                <td>Preço</td>
+                <td>Quantidade</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%@produto_promocao.each do |jogoPromo|%>
+                <tr>
+                    <td> <%=jogoPromo.nome%> </td>
+                    <td> <%=jogoPromo.descricao%> </td>
+                    <td> <%=jogoPromo.preco%> </td>
+                    <td> <%=jogoPromo.quantidade%> </td>
+                </tr>
+            <%end%>
+        </tbody>
+</body>
+
