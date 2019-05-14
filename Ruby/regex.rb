@@ -1,5 +1,12 @@
 hello = 'Hello world'
-puts hello
 
-puts /world/ =~ hello
+puts hello #Hello world
+
+puts /world/ =~ hello #6
+
+data = /world/.match(hello)
+puts data #world
+
+puts data.pre_match #World
+#Ela ainda tem o resto da frase
 #Extremely useful
