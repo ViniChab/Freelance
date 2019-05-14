@@ -63,3 +63,19 @@ conta = BankAccount.new()
 conta.open(nome, senha)
 
 puts "Suas informações são: #{conta.getInfo()}"
+
+
+############################################################################################ Method Missing
+
+class Fish
+    def method_missing(method_name)
+        puts "Fishes cannot #{method_name}"
+    end
+    def swim()
+        puts "GlubGlubGlub"
+    end
+end
+
+fish = Fish.new();
+fish.swim();
+fish.walk();
