@@ -7,3 +7,7 @@ rails g model Post title:string body:text #This will create the model with the s
 
 #Now, you want to create the route for that component
 get 'main', to: 'users#index'
+
+
+#or, just generate evrything with this command
+rails g scaffold ComponentName attr:string anotherAttr:text
