@@ -1,0 +1,21 @@
+<% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+        <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<table class="table table-bordered table-hover">
+    <%= render "tablenames"%>
+    <tbody>
+        <%= render @produtos%>
+    </tbody>
+</table>
+<div>
+    <h4>Produto com desconto</h4>
+</div>
+<table class="table table-bordered table-hover">
+    <%= render "tablenames"%>
+    <tbody>
+        <%= render @produto_com_desconto%>
+    </tbody>
+</table>
