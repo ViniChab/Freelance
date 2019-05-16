@@ -1,4 +1,0 @@
-class Produto < ApplicationRecord
-
-
-end
