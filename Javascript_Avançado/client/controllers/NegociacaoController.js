@@ -11,16 +11,15 @@ class NegociacaoController {
   adiciona(event) {
     event.preventDefault()
 
-    let data = this._inputData.value.split('-')
-    data = new Date(data[0], data[2], data[1])
-    console.log(data)
-    
+    let data = DateHelper.textoParaData(this._inputData.value)
+
     let negociacao = new Negociacao(
       data,
       this._inputQtt.value,
       this._inputValor.value
     )
 
-    console.log(negociacao)
+    let diaMesAno = DateHelper.dataParaTexto(negociacao.data)
+
   }
 }
