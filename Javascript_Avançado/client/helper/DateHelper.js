@@ -5,6 +5,12 @@ class DateHelper {
   }
 
   static textoParaData(texto) {
+    //digito de 4 números
+    //digito de 2 números
+    //digito de 2 números
+    if(!/\d{4}-\d{2}-\d{2}/.test(texto))
+      throw new Error('Deve estar no padrão')
+
     return new Date(
       ...texto
         .split('-')
@@ -13,8 +19,6 @@ class DateHelper {
   }
 
   static dataParaTexto(data) {
-    return data.getDate() + '/' +
-      (data.getMonth() + 1) + '/' +
-      data.getFullYear()
+    return `${data.getDate()}/${(data.getMonth() + 1)}/${data.getFullYear()}`
   }
 }
