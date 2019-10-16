@@ -7,17 +7,18 @@ class NegociacaoController {
     this._inputQtt = $('#quantidade')
     this._inputValor = $('#valor')
     this._listaNegociacao = new ListaNegociacao()
-    this._negociacaoView = new NegociacaoView($('#negociacoesView'))
-    this._negociacaoView.update()
+    this._negociacaoView = new NegociacaoView($('#innerTableBody'))
   }
 
   adiciona(event) {
     event.preventDefault()
+    let $ = document.querySelector.bind(document)
 
     let negociacao = this._criaNegociacao()
 
     this._listaNegociacao.adiciona(negociacao)
     this._limpaFormulatio()
+    this._negociacaoView.update(this._listaNegociacao, $('#somaTotal'))
   }
 
   _criaNegociacao() {

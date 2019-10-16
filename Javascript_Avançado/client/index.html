@@ -43,7 +43,26 @@
   <br>
   <br>
 
-  <div id='negociacoesView'></div>
+  <div id='negociacoesView'>
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>DATA</th>
+          <th>QUANTIDADE</th>
+          <th>VALOR</th>
+          <th>VOLUME</th>
+        </tr>
+      </thead>
+
+      <tbody id='innerTableBody'>
+      </tbody>
+
+      <tfoot>
+        <td colspan="3"></td>
+        <td id="somaTotal">0</td>
+      </tfoot>
+    </table>
+  </div>
 
 </body>
 

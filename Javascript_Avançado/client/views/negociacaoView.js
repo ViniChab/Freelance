@@ -4,28 +4,25 @@ class NegociacaoView {
     this._elemento = elemento
   }
 
-  update() {
-    this._elemento.innerHTML = this._template()
+  update(model, total) {
+    this._elemento.innerHTML += this._template(model.negociacoes.pop())
+    
+    let valor_total = +total.innerHTML
+    total.innerHTML = valor_total + +model.negociacoes.pop().valor
   }
 
-  _template() {
+  _template(model) {
     return `
-      <table class="table table-hover table-bordered">
-        <thead>
+      ${
+        `
           <tr>
-            <th>DATA</th>
-            <th>QUANTIDADE</th>
-            <th>VALOR</th>
-            <th>VOLUME</th>
+            <td>${DateHelper.dataParaTexto(model.data)}</td>
+            <td>${model.quantidade}</td>
+            <td>${model.valor}</td>
+            <td>${model.volume}</td>
           </tr>
-        </thead>
-
-        <tbody>
-        </tbody>
-
-        <tfoot>
-        </tfoot>
-      </table>
+        `
+      }
     `
   }
 }
