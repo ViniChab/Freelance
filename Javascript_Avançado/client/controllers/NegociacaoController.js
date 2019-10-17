@@ -6,8 +6,12 @@ class NegociacaoController {
     this._inputData = $('#data')
     this._inputQtt = $('#quantidade')
     this._inputValor = $('#valor')
+  
     this._listaNegociacao = new ListaNegociacao()
     this._negociacaoView = new NegociacaoView($('#innerTableBody'))
+  
+    this._mensagem = new Mensagem()
+    this._mensagemView = new MensagemView($('#mensagemView'))
   }
 
   adiciona(event) {
@@ -15,6 +19,8 @@ class NegociacaoController {
     let $ = document.querySelector.bind(document)
 
     let negociacao = this._criaNegociacao()
+    this._mensagem.texto = 'Mensagem adicionada com sucesso'
+    this._mensagemView.update(this._mensagem)
 
     this._listaNegociacao.adiciona(negociacao)
     this._limpaFormulatio()

@@ -1,7 +1,7 @@
-class NegociacaoView {
+class NegociacaoView extends View {
 
   constructor(elemento) {
-    this._elemento = elemento
+    super(elemento)
   }
 
   update(model, total) {
@@ -26,4 +26,3 @@ class NegociacaoView {
     `
   }
 }
-
