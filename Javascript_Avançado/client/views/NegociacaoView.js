@@ -4,17 +4,22 @@ class NegociacaoView extends View {
     super(elemento)
   }
 
-  update(model, total) {
-    this._elemento.innerHTML += this._template(model.negociacoes.pop())
-    
-    let valor_total = +total.innerHTML
-    total.innerHTML = valor_total + +model.negociacoes.pop().valor
+  update(model) {
+    let $ = document.querySelector.bind(document)
+    let total = $('#somaTotal')
+    if (model.negociacoes.length) {
+      this._elemento.innerHTML += this._template(model.negociacoes.pop())
+      let valor_total = +total.innerHTML
+      return total.innerHTML = valor_total + +model.negociacoes.pop().valor
+    }
+    this._elemento.innerHTML = ''
+    total.innerHTML = ''
   }
 
   _template(model) {
     return `
       ${
-        `
+      `
           <tr>
             <td>${DateHelper.dataParaTexto(model.data)}</td>
             <td>${model.quantidade}</td>
