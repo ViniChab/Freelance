@@ -6,7 +6,20 @@ class NegociacaoController {
     this._inputData = $('#data')
     this._inputQtt = $('#quantidade')
     this._inputValor = $('#valor')
-    this._listaNegociacao = new ListaNegociacao()
+
+    let self = this
+    this._listaNegociacao = new Proxy(new ListaNegociacao(), {
+      get(target, prop, receiver) {
+        if (['adiciona', 'esvazia'].includes(prop) && typeof (target[prop]) == typeof (Function)) {
+          return function () {
+            Reflect.apply(target[prop], target, arguments)
+            self._negociacaoView.update(target)
+          }
+        }
+        return Reflect.get(target, prop, receiver)
+      }
+    })
+
     this._negociacaoView = new NegociacaoView($('#innerTableBody'))
     this._mensagem = new Mensagem()
     this._mensagemView = new MensagemView($('#mensagemView'))
@@ -42,7 +55,7 @@ class NegociacaoController {
   apaga() {
     this._listaNegociacao.esvazia()
 
-    this._mensagem.texto="Negociações apagadas com sucesso"
+    this._mensagem.texto = "Negociações apagadas com sucesso"
     this._mensagemView.update(this._mensagem)
   }
 }
