@@ -2,16 +2,11 @@ class NegociacaoController {
 
   constructor() {
     let $ = document.querySelector.bind(document)
-    var vm = this
     //Isso mantém a associação com documet (pq o queryselector tem o this dentro dele)
     this._inputData = $('#data')
     this._inputQtt = $('#quantidade')
     this._inputValor = $('#valor')
-  
-    this._listaNegociacao = new ListaNegociacao(function(model) {
-      vm._negociacaoView.update(model)
-    })
-
+    this._listaNegociacao = new ListaNegociacao( model => this._negociacaoView.update(model))
     this._negociacaoView = new NegociacaoView($('#innerTableBody'))
     this._mensagem = new Mensagem()
     this._mensagemView = new MensagemView($('#mensagemView'))
