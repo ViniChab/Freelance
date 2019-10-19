@@ -6,7 +6,7 @@ class NegociacaoController {
     this._inputData = $('#data')
     this._inputQtt = $('#quantidade')
     this._inputValor = $('#valor')
-    this._listaNegociacao = new ListaNegociacao( model => this._negociacaoView.update(model))
+    this._listaNegociacao = new ListaNegociacao()
     this._negociacaoView = new NegociacaoView($('#innerTableBody'))
     this._mensagem = new Mensagem()
     this._mensagemView = new MensagemView($('#mensagemView'))
