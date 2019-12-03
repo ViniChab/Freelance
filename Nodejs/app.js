@@ -1,2 +1,3 @@
-console.log(__dirname) //Get the directory name
-console.log(__filename) //Get the directory and file name
+let counterModule = require('./count.js')
+
+console.log(counterModule.countArrayLength(['a', 'b', 'c']))
