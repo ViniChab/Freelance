@@ -1,14 +1,3 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
-
-import { ForgotPasswordComponent } from "./forgot-password.component";
-import { SharedModule } from "src/app/shared/shared.module";
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
-import { AppModule } from "src/app/app.module";
-import { BaseService } from "src/app/shared/services/auth/base.service";
-import { DebugElement } from "@angular/core";
-import { FormService } from "src/app/shared/services/auth/forms.service";
-
 describe("ForgotPasswordComponent", () => {
   let component: ForgotPasswordComponent;
   let fixture: ComponentFixture<ForgotPasswordComponent>;
